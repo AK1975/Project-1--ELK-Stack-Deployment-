@@ -21,7 +21,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - run playbook using this command (ansible-playbook install_webservers.yml)
 - If Successful you will see like attached Image (dvwa_sucess.jpg)
 
- -[DVWA Success](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/DVWA_Success.PNG)
+ ![DVWA Success](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/DVWA_Success.PNG)
 
 - Setup Elk Server
 - SSh to the jump box
@@ -36,7 +36,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - Run Playbook using (ansible-playbook filebeat-playbook.yml), if install successfully you will see as this image as below
 - Repeat the same steps to install Metricbeat, download Metricbeat-config.yml and metricbeat-playbook file and modify as required. see attached metricbeat-config.yml and metricbeat-playbook.yml files below.
 
-[Filebeat_Sucess.jpg](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/Installtion.PNG)
+![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Installtion.PNG)
 
 -Edit Ansible Config file to allow remote_user to azadmin and create.
 
@@ -168,7 +168,7 @@ The playbook implements the following tasks:
 - The following screenshot displays the result of running "docker ps" after successfully configuring the ELK instance.
 
 
-[ELK_Docker_PS.JPG](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/ELK_Docker.JPG)
+![ELK_Docker_PS.JPG](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/ELK_Docker.JPG)
 
 
 ### Target Machines & Beats
@@ -190,11 +190,11 @@ These Beats allow us to collect the following information from each machine:
 --We installed filebeat and Metricbeat on all 3 webservers. Filebeat collects system logs and sends it to Elastic Search or logstash for indexing. For each log that Filebeat locates, Filebeat starts a harvester. Each harvester reads a single log for new content and sends the new log data to libbeat, which aggregates the events and sends the aggregated data to the output that you’ve configured for Filebeat.
 -Example for filebeat
 SSH Login' as we doing jump box to login to all 3 web VMs using SSH we can see the log activity in kibana under Dashboard. it will show you how many successful login attempts and failed attempts
-[Kibana_SSH_Login.jpg](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/Kibana_SSH_Log.JPG)
+![Kibana_SSH_Login.jpg]https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana_SSH%20Log.JPG)
 
 Metricbeat collects operating system metrics like CPU, memory usage, network usage from web servers and sends it to Elastic Search or logstash. -Example for metricbeat 'System Overview' in this example we can see all systems and running processes and resources usage like how much memory it is used in peek usage, how much CPU app is using any bottlenecks exists? this will allows you to optimise servers performance. please see attched Pic for metricbeat.
 
-[Kibana_Metricbeat_Process.JPG](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/Kibana_Metricbeat.JPG)
+![Kibana_Metricbeat_Process.JPG](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana_Metricbeat.JPG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -205,7 +205,7 @@ SSH into the control node and follow the steps below:
   - modify  /etc/ansible/hosts file to add new group [Elk] and add ELK-Server IP Address
   - Run install_Elk.yml playbook (ansible-playbook install_Elk.yml)
   - Once it is sucessfull you will see as below.
-  -[ELK-Server Success](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/DVWA_Success.PNG)
+  -ELK-Server Success
 
 - Setup Filebeat and Metricbeat
   - Download filebeat config file from https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat >  /etc/ansible/files/filebeat-config.yml
@@ -226,7 +226,7 @@ SSH into the control node and follow the steps below:
   -Run filebeat using this comand from jumpbox (ainsible-playbook filebeat-playbook.yml)
   - once successfull u can see as below
 
-   -[Filebeat Success](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Images/DVWA_Success.PNG)
+   -![Filebeat Success](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/DVWA_Success.PNG)
 
   - To test the successfull installation of fiebeat  go to Kibana (http://Elk-server_public_ip:5601/app/kibana) : Add log data > System logs > Module Status > Check data and go to dashboard to see log data from webservers.
 
