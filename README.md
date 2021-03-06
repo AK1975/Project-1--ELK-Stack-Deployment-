@@ -294,7 +294,7 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 -   cat ida_rsa.pub
 -   ssh azadmin@web-01_Ip
 -   sudo ansible -m ping all
--  
+
 
 
 
