@@ -42,17 +42,17 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 **Refrence files**
 
-[Install_Elk](https- ://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Install_Elk.yml)
+[Install_Elk](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/Install_Elk.yml)
 
-[Filebeat_Playbook](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Filebeat_Playbook.yml)
+[Filebeat_Playbook](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/Filebeat_Playbook.yml)
 
-[Metricbeat_Playbook](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Metricbeat_Playbook.yml)
+[Metricbeat_Playbook](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/Metricbeat_Playbook.yml)
 
-[Filebeat_Config](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/filebeat-config.yml)
+[Filebeat_Config](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/filebeat-config.yml)
 
-[Metricbeat_config](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/metricbeat-config.yml)
+[Metricbeat_config](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/metricbeat-config.yml)
 
-[Ansible Host File](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/hosts.txt)
+[Ansible Host File](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/hosts.txt)
 # This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -223,7 +223,7 @@ SSH into the control node and follow the steps below:
   - Copy File from '/etc/ansible/files/filebeat-config.yml' to '/etc/filebeat/filebeat.yml' using playbook tasks
   -  create filebeat.playbook,yml file as below. and create tasks like filebeat.deb download, install filebeat, copy filebeat config file to /etc/filebeat/filebeat.yml, enable system module,setup filebeat, start filebeat service and enable filebeat service on reboot.
 
-  -[Filebeat_Playbook](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Filebeat_Playbook.yml)
+  -[Filebeat_Playbook](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/Filebeat_Playbook.yml)
   
   -Run filebeat using this comand from jumpbox (ainsible-playbook filebeat-playbook.yml)
   - once successfull u can see as below
@@ -234,9 +234,9 @@ SSH into the control node and follow the steps below:
 
   -- Repeat same steps to install Metricbeat, download Metricbeat-config.yml and metricbeat-playbook file  and modify as required. see attached metricbeat-config.yml and metricbeat-playbook.yml files below.
 
-[Metricbeat_Config](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/metricbeat-config.yml)
+[Metricbeat_Config](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/metricbeat-config.yml)
 
-[Metricbeat_Playbook](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Metricbeat_Playbook.yml)
+[Metricbeat_Playbook](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/Metricbeat_Playbook.yml)
 
 - after successful metricbeat installation navigate to kibana and click on metric data under metrics > system metrics >> module status > click check data and go to the dashboard to see log data.
 
