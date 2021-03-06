@@ -3,7 +3,7 @@
 The files in this repository were used to configure the network depicted below.
 
 
-![1](https://monash.bootcampcontent.com/andykalluri/project-1/-/blob/master/%20ELK%20Stack%20Project/Elk-Project.JPG)
+![](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Elk-Project.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat. ELk Server Setup
 
