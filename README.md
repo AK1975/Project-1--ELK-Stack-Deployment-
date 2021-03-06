@@ -190,11 +190,13 @@ These Beats allow us to collect the following information from each machine:
 --We installed filebeat and Metricbeat on all 3 webservers. Filebeat collects system logs and sends it to Elastic Search or logstash for indexing. For each log that Filebeat locates, Filebeat starts a harvester. Each harvester reads a single log for new content and sends the new log data to libbeat, which aggregates the events and sends the aggregated data to the output that you’ve configured for Filebeat.
 -Example for filebeat
 SSH Login' as we doing jump box to login to all 3 web VMs using SSH we can see the log activity in kibana under Dashboard. it will show you how many successful login attempts and failed attempts
-![Kibana_SSH_Login.jpg]https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana_SSH%20Log.JPG)
+
+![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana_SSH%20Log.JPG)
 
 Metricbeat collects operating system metrics like CPU, memory usage, network usage from web servers and sends it to Elastic Search or logstash. -Example for metricbeat 'System Overview' in this example we can see all systems and running processes and resources usage like how much memory it is used in peek usage, how much CPU app is using any bottlenecks exists? this will allows you to optimise servers performance. please see attched Pic for metricbeat.
 
-![Kibana_Metricbeat_Process.JPG](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana_Metricbeat.JPG)
+
+![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana_Metricbeat.JPG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
