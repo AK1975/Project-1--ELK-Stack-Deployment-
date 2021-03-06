@@ -38,7 +38,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Installtion.PNG)
 
--Edit Ansible Config file to allow remote_user to azadmin and create.
+-Create/Edit Ansible Config file to allow remote_user to azadmin.
 
 **Refrence files**
 
