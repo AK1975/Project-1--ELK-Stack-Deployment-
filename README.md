@@ -1,4 +1,4 @@
-## Automated ELK Stack Deployment
+## Automated ELK Stack Deployment:
 
 The files in this repository were used to configure the network depicted below.
 
@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat. ELk Server Setup
 
 
-# Jumpbox and Web VM's Setup
+# Jumpbox and Web VM's Setup:
 - Install ansible in jump box VM. edit the config file to allow remote_user to azadmin and update hosts file in jump box ansible container /etc/ansible/hosts under [webservers] with Web VM IPs.
 - Create a new ssh key and copy ssh public key (ida_rsa.pub)
 - update public key with username to webservers reset password page in Azure portal
@@ -23,7 +23,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
  ![DVWA Success](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/DVWA_Success1.PNG)
 
-# Setup Elk Server
+# Setup Elk Server:
 - SSh to the jump box
 - modify /etc/ansible/hosts file to add new group [Elk].and add ELK-Server IP Address
 - Run install_Elk.yml playbook (see below install_Elk.yml)
@@ -31,7 +31,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - 
 ![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana.JPG)
 
-# Setup/Config Filebeat and Metricbeat on Webservers
+# Setup/Config Filebeat and Metricbeat on Webservers:
 - SSH to jumpbox
 - create/download filebeat-config.yml in /etc/ansible/files as per Filebeat_config attached below.
 - create/download filebeat-playbook.yml in /etc/ansible/roles as per filebear_playbook.yml attached below check all tasks as required.
@@ -55,6 +55,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 [Metricbeat_config](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/metricbeat-config.yml)
 
 [Ansible Host File](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/hosts.txt)
+
 # This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -64,7 +65,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - How to Use the Ansible Build
 
 
-### Description of the Topology
+### Description of the Topology:
 
 **The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.**
 -Load balancing ensures that the application will be high availability, in addition to restricting access to the network.
