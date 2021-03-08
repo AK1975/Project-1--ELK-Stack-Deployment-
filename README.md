@@ -230,7 +230,7 @@ SSH into the control node and follow the steps below:
   -Run filebeat using this comand from jumpbox (ainsible-playbook filebeat-playbook.yml)
   - once successfull u can see as below
 
-  ![Filebeat Success]https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Metricbeats.JPG)
+  ![Filebeat Success](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Metricbeats.JPG)
 
   - To test the successfull installation of fiebeat  go to Kibana (http://Elk-server_public_ip:5601/app/kibana) : Add log data > System logs > Module Status > Check data and go to dashboard to see log data from webservers.
 
