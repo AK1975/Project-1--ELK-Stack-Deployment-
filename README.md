@@ -31,7 +31,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - 
 ![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana.JPG)
 
-- Setup/Config Filebeat and Metricbeat on Webservers
+# Setup/Config Filebeat and Metricbeat on Webservers
 - SSH to jumpbox
 - create/download filebeat-config.yml in /etc/ansible/files as per Filebeat_config attached below.
 - create/download filebeat-playbook.yml in /etc/ansible/roles as per filebear_playbook.yml attached below check all tasks as required.
