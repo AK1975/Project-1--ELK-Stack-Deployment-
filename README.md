@@ -21,7 +21,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - run playbook using this command (ansible-playbook install_webservers.yml)
 - If Successful you will see like attached Image (dvwa_sucess.jpg)
 
- ![DVWA Success](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/DVWA_Success.PNG)
+ ![DVWA Success](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/DVWA_Success1.PNG)
 
 # Setup Elk Server
 - SSh to the jump box
