@@ -26,7 +26,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 # Setup Elk Server
 - SSh to the jump box
 - modify /etc/ansible/hosts file to add new group [Elk].and add ELK-Server IP Address
-- Run install_Elk.yml playbook (ansible-playbook install_Elk.yml)
+- Run install_Elk.yml playbook (see below install_Elk.yml)
 - Once it is successful, you will see something similar to dvwa_sucess.jpg. and u can access Kibna using URL - http://Kiban's_Public_IP:5601/app/kibana
 - 
 ![Filebeat_Sucess.jpg](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/blob/main/images/Kibana.JPG)
