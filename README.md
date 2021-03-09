@@ -299,7 +299,8 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 -   sudo ansible -m ping all
 
 
-# Linux Bash Scripts used in Bash Scripting and Programming
+# Linux Bash Scripts used in Bash Scripting and Programming:
+- All .sh files can found in /Linux Bash Files Folder
 	-
 
 
