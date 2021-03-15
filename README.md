@@ -300,7 +300,8 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 
 
 # Linux Bash Scripts used in Bash Scripting and Programming:
-- All .sh files can found in /Linux Bash Files Folder
+-[Bash Scripts](https://github.com/AK1975/Project-1--ELK-Stack-Deployment-/tree/main/Linux-Bash%20Files)
+
 	-
 
 
